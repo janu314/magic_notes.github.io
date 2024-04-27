@@ -65,8 +65,9 @@ const saveUserInfo = (filename) => {
 
     const timestamp = filename.match(/(\d+)/)[0]; //extracxt
     const userInfoFilename = `userinfo_${timestamp}_${email}`;
+    const outLang = prompt("(Optional) Pls. enter the desired output language (English is default");
     
-    userInfo = `Name: ${name}\nEmail: ${email}\nClass: ${className}\naudioFile: ${filename}\nFormat: ${outFormat}\n`;
+    userInfo = `Name: ${name}\nEmail: ${email}\nClass: ${className}\naudioFile: ${filename}\nFormat: ${outFormat}\nLanguage: ${outLang}`;
     
     const userInfoBlob = new Blob([userInfo], { type: 'text/plain' });
 
