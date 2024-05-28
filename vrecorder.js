@@ -120,7 +120,7 @@ const addAudio = () => {
 const createMailtoLink = () => {
     console.log('Creating mailto link...');
 
-    const recipient = 'magicnotes314@gmail.com';
+    const recipient = 'notes@magicnotesai.com';
     const subject = 'audio recording';
     
     console.log('Retrieved user info:', userInfo);
