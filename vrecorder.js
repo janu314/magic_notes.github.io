@@ -145,7 +145,7 @@ const createMailtoLink = () => {
 // Function to mail files
 const mailFiles = () => {
     //console.log('Retrieved user info:', userInfo);
-    addMessage('Mailing files just attach the audio file')
+    addMessage('Mailing files just attach the audio file and user_txt file listed below from your downloads folder!')
     const mailtoLink = createMailtoLink();
     const newWindow = window.open(mailtoLink, '_blank');
     if (newWindow) {
